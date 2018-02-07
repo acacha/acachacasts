@@ -15,7 +15,7 @@ class CreateEpisodesTable extends Migration
     {
         Schema::create('episodes', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('serie_id');
+            $table->unsignedInteger('serie_id')->nullable();
             $table->string('name');
             $table->string('description');
             $table->string('path');

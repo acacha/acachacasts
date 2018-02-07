@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder
 //            echo $file . "\n";
 //            echo basename($file) . "\n";
 //            echo $path_parts['filename'] . "\n"; // filename is only since PHP 5.2.0
-            $episode = factory(Episode::class)->create([
+            $episode = Episode::create([
                 'name' => $path_parts['filename'],
                 'description' => $path_parts['filename'],
                 'path' => 'storage/' . basename($file)
