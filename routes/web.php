@@ -12,3 +12,5 @@
 */
 
 Route::get('/series/{serie}/episodes/{episode}', 'SerieEpisodesController@show');
+
+Route::get('/login','LoginController@show');

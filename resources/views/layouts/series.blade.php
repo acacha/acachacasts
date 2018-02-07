@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title', 'Acachacasts')</title>
     @stack('BeforeCss')
-    <link rel="stylesheet" href="{{ elixir('css/app.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     @stack('AfterCss')
 </head>
 <body>
@@ -23,7 +23,7 @@
         @yield('main-content')
     </div>
     @stack('beforeScripts')
-    <script src="{{ elixir('js/app.js') }}"></script>
+    <script src="{{ mix('js/app.js') }}"></script>
     @stack('afterScripts')
 </body>
 </html>
